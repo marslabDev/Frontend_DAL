@@ -43,6 +43,11 @@ class Product extends Model implements HasMedia
         $this->addMediaConversion('preview')->fit('crop', 120, 120);
     }
 
+    public function productProductDetails()
+    {
+        return $this->hasMany(ProductDetail::class, 'product_id', 'id');
+    }
+
     public function categories()
     {
         return $this->belongsToMany(ProductCategory::class);

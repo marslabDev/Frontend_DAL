@@ -31,6 +31,20 @@
                 <span class="help-block">{{ trans('cruds.productDetail.fields.description_helper') }}</span>
             </div>
             <div class="form-group">
+                <label class="required" for="product_id">{{ trans('cruds.productDetail.fields.product') }}</label>
+                <select class="form-control select2 {{ $errors->has('product') ? 'is-invalid' : '' }}" name="product_id" id="product_id" required>
+                    @foreach($products as $id => $entry)
+                        <option value="{{ $id }}" {{ (old('product_id') ? old('product_id') : $productDetail->product->id ?? '') == $id ? 'selected' : '' }}>{{ $entry }}</option>
+                    @endforeach
+                </select>
+                @if($errors->has('product'))
+                    <div class="invalid-feedback">
+                        {{ $errors->first('product') }}
+                    </div>
+                @endif
+                <span class="help-block">{{ trans('cruds.productDetail.fields.product_helper') }}</span>
+            </div>
+            <div class="form-group">
                 <button class="btn btn-danger" type="submit">
                     {{ trans('global.save') }}
                 </button>

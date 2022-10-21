@@ -39,6 +39,14 @@
                             {{ $productDetail->description }}
                         </td>
                     </tr>
+                    <tr>
+                        <th>
+                            {{ trans('cruds.productDetail.fields.product') }}
+                        </th>
+                        <td>
+                            {{ $productDetail->product->name ?? '' }}
+                        </td>
+                    </tr>
                 </tbody>
             </table>
             <div class="form-group">

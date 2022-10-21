@@ -74,6 +74,22 @@
     </div>
 </div>
 
-
+<div class="card">
+    <div class="card-header">
+        {{ trans('global.relatedData') }}
+    </div>
+    <ul class="nav nav-tabs" role="tablist" id="relationship-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="#product_product_details" role="tab" data-toggle="tab">
+                {{ trans('cruds.productDetail.title') }}
+            </a>
+        </li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane" role="tabpanel" id="product_product_details">
+            @includeIf('admin.products.relationships.productProductDetails', ['productDetails' => $product->productProductDetails])
+        </div>
+    </div>
+</div>
 
 @endsection

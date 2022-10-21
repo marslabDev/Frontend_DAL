@@ -21,9 +21,6 @@ class StoreProductRequest extends FormRequest
                 'string',
                 'required',
             ],
-            'price' => [
-                'required',
-            ],
             'categories.*' => [
                 'integer',
             ],

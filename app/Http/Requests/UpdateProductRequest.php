@@ -21,9 +21,6 @@ class UpdateProductRequest extends FormRequest
                 'string',
                 'required',
             ],
-            'price' => [
-                'required',
-            ],
             'categories.*' => [
                 'integer',
             ],

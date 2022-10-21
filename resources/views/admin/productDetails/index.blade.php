@@ -1,40 +1,34 @@
 @extends('layouts.admin')
 @section('content')
-@can('product_create')
+@can('product_detail_create')
     <div style="margin-bottom: 10px;" class="row">
         <div class="col-lg-12">
-            <a class="btn btn-success" href="{{ route('admin.products.create') }}">
-                {{ trans('global.add') }} {{ trans('cruds.product.title_singular') }}
+            <a class="btn btn-success" href="{{ route('admin.product-details.create') }}">
+                {{ trans('global.add') }} {{ trans('cruds.productDetail.title_singular') }}
             </a>
         </div>
     </div>
 @endcan
 <div class="card">
     <div class="card-header">
-        {{ trans('cruds.product.title_singular') }} {{ trans('global.list') }}
+        {{ trans('cruds.productDetail.title_singular') }} {{ trans('global.list') }}
     </div>
 
     <div class="card-body">
-        <table class=" table table-bordered table-striped table-hover ajaxTable datatable datatable-Product">
+        <table class=" table table-bordered table-striped table-hover ajaxTable datatable datatable-ProductDetail">
             <thead>
                 <tr>
                     <th width="10">
 
                     </th>
                     <th>
-                        {{ trans('cruds.product.fields.id') }}
+                        {{ trans('cruds.productDetail.fields.id') }}
                     </th>
                     <th>
-                        {{ trans('cruds.product.fields.name') }}
+                        {{ trans('cruds.productDetail.fields.price') }}
                     </th>
                     <th>
-                        {{ trans('cruds.product.fields.category') }}
-                    </th>
-                    <th>
-                        {{ trans('cruds.product.fields.tag') }}
-                    </th>
-                    <th>
-                        {{ trans('cruds.product.fields.photo') }}
+                        {{ trans('cruds.productDetail.fields.description') }}
                     </th>
                     <th>
                         &nbsp;
@@ -50,22 +44,7 @@
                         <input class="search" type="text" placeholder="{{ trans('global.search') }}">
                     </td>
                     <td>
-                        <select class="search">
-                            <option value>{{ trans('global.all') }}</option>
-                            @foreach($product_categories as $key => $item)
-                                <option value="{{ $item->name }}">{{ $item->name }}</option>
-                            @endforeach
-                        </select>
-                    </td>
-                    <td>
-                        <select class="search">
-                            <option value>{{ trans('global.all') }}</option>
-                            @foreach($product_tags as $key => $item)
-                                <option value="{{ $item->name }}">{{ $item->name }}</option>
-                            @endforeach
-                        </select>
-                    </td>
-                    <td>
+                        <input class="search" type="text" placeholder="{{ trans('global.search') }}">
                     </td>
                     <td>
                     </td>
@@ -83,11 +62,11 @@
 <script>
     $(function () {
   let dtButtons = $.extend(true, [], $.fn.dataTable.defaults.buttons)
-@can('product_delete')
+@can('product_detail_delete')
   let deleteButtonTrans = '{{ trans('global.datatables.delete') }}';
   let deleteButton = {
     text: deleteButtonTrans,
-    url: "{{ route('admin.products.massDestroy') }}",
+    url: "{{ route('admin.product-details.massDestroy') }}",
     className: 'btn-danger',
     action: function (e, dt, node, config) {
       var ids = $.map(dt.rows({ selected: true }).data(), function (entry) {
@@ -119,21 +98,19 @@
     serverSide: true,
     retrieve: true,
     aaSorting: [],
-    ajax: "{{ route('admin.products.index') }}",
+    ajax: "{{ route('admin.product-details.index') }}",
     columns: [
       { data: 'placeholder', name: 'placeholder' },
 { data: 'id', name: 'id' },
-{ data: 'name', name: 'name' },
-{ data: 'category', name: 'categories.name' },
-{ data: 'tag', name: 'tags.name' },
-{ data: 'photo', name: 'photo', sortable: false, searchable: false },
+{ data: 'price', name: 'price' },
+{ data: 'description', name: 'description' },
 { data: 'actions', name: '{{ trans('global.actions') }}' }
     ],
     orderCellsTop: true,
     order: [[ 1, 'desc' ]],
     pageLength: 100,
   };
-  let table = $('.datatable-Product').DataTable(dtOverrideGlobals);
+  let table = $('.datatable-ProductDetail').DataTable(dtOverrideGlobals);
   $('a[data-toggle="tab"]').on('shown.bs.tab click', function(e){
       $($.fn.dataTable.tables(true)).DataTable()
           .columns.adjust();

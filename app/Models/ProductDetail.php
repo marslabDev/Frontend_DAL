@@ -25,10 +25,16 @@ class ProductDetail extends Model
     protected $fillable = [
         'price',
         'description',
+        'product_id',
         'created_at',
         'updated_at',
         'deleted_at',
     ];
+
+    public function product()
+    {
+        return $this->belongsTo(Product::class, 'product_id');
+    }
 
     protected function serializeDate(DateTimeInterface $date)
     {

@@ -20,6 +20,10 @@ class UpdateProductDetailRequest extends FormRequest
             'price' => [
                 'required',
             ],
+            'product_id' => [
+                'required',
+                'integer',
+            ],
         ];
     }
 }

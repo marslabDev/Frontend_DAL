@@ -18,7 +18,7 @@ class ProductCategoryApiController extends Controller
 
     public function index()
     {
-        abort_if(Gate::denies('product_category_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        // abort_if(Gate::denies('product_category_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         return new ProductCategoryResource(ProductCategory::all());
     }
@@ -38,7 +38,7 @@ class ProductCategoryApiController extends Controller
 
     public function show(ProductCategory $productCategory)
     {
-        abort_if(Gate::denies('product_category_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        // abort_if(Gate::denies('product_category_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         return new ProductCategoryResource($productCategory);
     }
@@ -65,7 +65,7 @@ class ProductCategoryApiController extends Controller
 
     public function destroy(ProductCategory $productCategory)
     {
-        abort_if(Gate::denies('product_category_delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        // abort_if(Gate::denies('product_category_delete'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         $productCategory->delete();
 

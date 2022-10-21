@@ -45,7 +45,7 @@ class Product extends Model implements HasMedia
 
     public function productProductDetails()
     {
-        return $this->hasMany(ProductDetail::class, 'product_id', 'id');
+        return $this->hasOne(ProductDetail::class, 'product_id', 'id');
     }
 
     public function categories()

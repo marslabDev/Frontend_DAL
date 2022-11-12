@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-use \DateTimeInterface;
+use DateTimeInterface;
 use App\Traits\Auditable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -21,7 +21,8 @@ class Product extends Model implements HasMedia
     public $table = 'products';
 
     protected $appends = [
-        'photo',
+        // 'photo',
+        'photo_url',
     ];
 
     protected $dates = [
@@ -68,6 +69,15 @@ class Product extends Model implements HasMedia
         }
 
         return $file;
+    }
+
+    public function getPhotoUrlAttribute()
+    {
+        $file = $this->getMedia('photo')->last();
+        if ($file) {
+            return $file->url = $file->getUrl();
+        }
+        return null;
     }
 
     protected function serializeDate(DateTimeInterface $date)

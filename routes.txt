@@ -1,113 +1,113 @@
 
-  ANY             / .......................................................................................................................... Illuminate\Routing › RedirectController
-  GET|HEAD        _dusk/login/{userId}/{guard?} ..................................................................................... dusk.login › Laravel\Dusk › UserController@login
-  GET|HEAD        _dusk/logout/{guard?} ........................................................................................... dusk.logout › Laravel\Dusk › UserController@logout
-  GET|HEAD        _dusk/user/{guard?} ................................................................................................. dusk.user › Laravel\Dusk › UserController@user
-  POST            _ignition/execute-solution ........................................................... ignition.executeSolution › Spatie\LaravelIgnition › ExecuteSolutionController
-  GET|HEAD        _ignition/health-check ....................................................................... ignition.healthCheck › Spatie\LaravelIgnition › HealthCheckController
-  POST            _ignition/update-config .................................................................... ignition.updateConfig › Spatie\LaravelIgnition › UpdateConfigController
-  GET|HEAD        admin ...................................................................................................................... admin.home › Admin\HomeController@index
-  GET|HEAD        admin/audit-logs .......................................................................................... admin.audit-logs.index › Admin\AuditLogsController@index
-  GET|HEAD        admin/audit-logs/{audit_log} ................................................................................ admin.audit-logs.show › Admin\AuditLogsController@show
-  GET|HEAD        admin/permissions ...................................................................................... admin.permissions.index › Admin\PermissionsController@index
-  POST            admin/permissions ...................................................................................... admin.permissions.store › Admin\PermissionsController@store
-  GET|HEAD        admin/permissions/create ............................................................................. admin.permissions.create › Admin\PermissionsController@create
-  DELETE          admin/permissions/destroy .................................................................. admin.permissions.massDestroy › Admin\PermissionsController@massDestroy
-  GET|HEAD        admin/permissions/{permission} ........................................................................... admin.permissions.show › Admin\PermissionsController@show
-  PUT|PATCH       admin/permissions/{permission} ....................................................................... admin.permissions.update › Admin\PermissionsController@update
-  DELETE          admin/permissions/{permission} ..................................................................... admin.permissions.destroy › Admin\PermissionsController@destroy
-  GET|HEAD        admin/permissions/{permission}/edit ...................................................................... admin.permissions.edit › Admin\PermissionsController@edit
-  GET|HEAD        admin/product-categories .................................................................... admin.product-categories.index › Admin\ProductCategoryController@index
-  POST            admin/product-categories .................................................................... admin.product-categories.store › Admin\ProductCategoryController@store
-  POST            admin/product-categories/ckmedia ................................ admin.product-categories.storeCKEditorImages › Admin\ProductCategoryController@storeCKEditorImages
-  GET|HEAD        admin/product-categories/create ........................................................... admin.product-categories.create › Admin\ProductCategoryController@create
-  DELETE          admin/product-categories/destroy ................................................ admin.product-categories.massDestroy › Admin\ProductCategoryController@massDestroy
-  POST            admin/product-categories/media .................................................... admin.product-categories.storeMedia › Admin\ProductCategoryController@storeMedia
-  GET|HEAD        admin/product-categories/{product_category} ................................................... admin.product-categories.show › Admin\ProductCategoryController@show
-  PUT|PATCH       admin/product-categories/{product_category} ............................................... admin.product-categories.update › Admin\ProductCategoryController@update
-  DELETE          admin/product-categories/{product_category} ............................................. admin.product-categories.destroy › Admin\ProductCategoryController@destroy
-  GET|HEAD        admin/product-categories/{product_category}/edit .............................................. admin.product-categories.edit › Admin\ProductCategoryController@edit
-  GET|HEAD        admin/product-details ............................................................................ admin.product-details.index › Admin\ProductDetailController@index
-  POST            admin/product-details ............................................................................ admin.product-details.store › Admin\ProductDetailController@store
-  GET|HEAD        admin/product-details/create ................................................................... admin.product-details.create › Admin\ProductDetailController@create
-  DELETE          admin/product-details/destroy ........................................................ admin.product-details.massDestroy › Admin\ProductDetailController@massDestroy
-  GET|HEAD        admin/product-details/{product_detail} ............................................................. admin.product-details.show › Admin\ProductDetailController@show
-  PUT|PATCH       admin/product-details/{product_detail} ......................................................... admin.product-details.update › Admin\ProductDetailController@update
-  DELETE          admin/product-details/{product_detail} ....................................................... admin.product-details.destroy › Admin\ProductDetailController@destroy
-  GET|HEAD        admin/product-details/{product_detail}/edit ........................................................ admin.product-details.edit › Admin\ProductDetailController@edit
-  GET|HEAD        admin/product-tags ..................................................................................... admin.product-tags.index › Admin\ProductTagController@index
-  POST            admin/product-tags ..................................................................................... admin.product-tags.store › Admin\ProductTagController@store
-  GET|HEAD        admin/product-tags/create ............................................................................ admin.product-tags.create › Admin\ProductTagController@create
-  DELETE          admin/product-tags/destroy ................................................................. admin.product-tags.massDestroy › Admin\ProductTagController@massDestroy
-  GET|HEAD        admin/product-tags/{product_tag} ......................................................................... admin.product-tags.show › Admin\ProductTagController@show
-  PUT|PATCH       admin/product-tags/{product_tag} ..................................................................... admin.product-tags.update › Admin\ProductTagController@update
-  DELETE          admin/product-tags/{product_tag} ................................................................... admin.product-tags.destroy › Admin\ProductTagController@destroy
-  GET|HEAD        admin/product-tags/{product_tag}/edit .................................................................... admin.product-tags.edit › Admin\ProductTagController@edit
-  GET|HEAD        admin/products ................................................................................................ admin.products.index › Admin\ProductController@index
-  POST            admin/products ................................................................................................ admin.products.store › Admin\ProductController@store
-  POST            admin/products/ckmedia ............................................................ admin.products.storeCKEditorImages › Admin\ProductController@storeCKEditorImages
-  GET|HEAD        admin/products/create ....................................................................................... admin.products.create › Admin\ProductController@create
-  DELETE          admin/products/destroy ............................................................................ admin.products.massDestroy › Admin\ProductController@massDestroy
-  POST            admin/products/media ................................................................................ admin.products.storeMedia › Admin\ProductController@storeMedia
-  GET|HEAD        admin/products/{product} ........................................................................................ admin.products.show › Admin\ProductController@show
-  PUT|PATCH       admin/products/{product} .................................................................................... admin.products.update › Admin\ProductController@update
-  DELETE          admin/products/{product} .................................................................................. admin.products.destroy › Admin\ProductController@destroy
-  GET|HEAD        admin/products/{product}/edit ................................................................................... admin.products.edit › Admin\ProductController@edit
-  GET|HEAD        admin/roles ........................................................................................................ admin.roles.index › Admin\RolesController@index
-  POST            admin/roles ........................................................................................................ admin.roles.store › Admin\RolesController@store
-  GET|HEAD        admin/roles/create ............................................................................................... admin.roles.create › Admin\RolesController@create
-  DELETE          admin/roles/destroy .................................................................................... admin.roles.massDestroy › Admin\RolesController@massDestroy
-  GET|HEAD        admin/roles/{role} ................................................................................................... admin.roles.show › Admin\RolesController@show
-  PUT|PATCH       admin/roles/{role} ............................................................................................... admin.roles.update › Admin\RolesController@update
-  DELETE          admin/roles/{role} ............................................................................................. admin.roles.destroy › Admin\RolesController@destroy
-  GET|HEAD        admin/roles/{role}/edit .............................................................................................. admin.roles.edit › Admin\RolesController@edit
-  GET|HEAD        admin/users ........................................................................................................ admin.users.index › Admin\UsersController@index
-  POST            admin/users ........................................................................................................ admin.users.store › Admin\UsersController@store
-  GET|HEAD        admin/users/create ............................................................................................... admin.users.create › Admin\UsersController@create
-  DELETE          admin/users/destroy .................................................................................... admin.users.massDestroy › Admin\UsersController@massDestroy
-  GET|HEAD        admin/users/{user} ................................................................................................... admin.users.show › Admin\UsersController@show
-  PUT|PATCH       admin/users/{user} ............................................................................................... admin.users.update › Admin\UsersController@update
-  DELETE          admin/users/{user} ............................................................................................. admin.users.destroy › Admin\UsersController@destroy
-  GET|HEAD        admin/users/{user}/edit .............................................................................................. admin.users.edit › Admin\UsersController@edit
-  GET|HEAD        api/v1/product-categories ........................................................... api.product-categories.index › Api\V1\Admin\ProductCategoryApiController@index
-  POST            api/v1/product-categories ........................................................... api.product-categories.store › Api\V1\Admin\ProductCategoryApiController@store
-  POST            api/v1/product-categories/media ........................................... api.product-categories.storeMedia › Api\V1\Admin\ProductCategoryApiController@storeMedia
-  GET|HEAD        api/v1/product-categories/{product_category} .......................................... api.product-categories.show › Api\V1\Admin\ProductCategoryApiController@show
-  PUT|PATCH       api/v1/product-categories/{product_category} ...................................... api.product-categories.update › Api\V1\Admin\ProductCategoryApiController@update
-  DELETE          api/v1/product-categories/{product_category} .................................... api.product-categories.destroy › Api\V1\Admin\ProductCategoryApiController@destroy
-  GET|HEAD        api/v1/product-details ................................................................... api.product-details.index › Api\V1\Admin\ProductDetailApiController@index
-  POST            api/v1/product-details ................................................................... api.product-details.store › Api\V1\Admin\ProductDetailApiController@store
-  GET|HEAD        api/v1/product-details/{product_detail} .................................................... api.product-details.show › Api\V1\Admin\ProductDetailApiController@show
-  PUT|PATCH       api/v1/product-details/{product_detail} ................................................ api.product-details.update › Api\V1\Admin\ProductDetailApiController@update
-  DELETE          api/v1/product-details/{product_detail} .............................................. api.product-details.destroy › Api\V1\Admin\ProductDetailApiController@destroy
-  GET|HEAD        api/v1/product-tags ............................................................................ api.product-tags.index › Api\V1\Admin\ProductTagApiController@index
-  POST            api/v1/product-tags ............................................................................ api.product-tags.store › Api\V1\Admin\ProductTagApiController@store
-  GET|HEAD        api/v1/product-tags/{product_tag} ................................................................ api.product-tags.show › Api\V1\Admin\ProductTagApiController@show
-  PUT|PATCH       api/v1/product-tags/{product_tag} ............................................................ api.product-tags.update › Api\V1\Admin\ProductTagApiController@update
-  DELETE          api/v1/product-tags/{product_tag} .......................................................... api.product-tags.destroy › Api\V1\Admin\ProductTagApiController@destroy
-  GET|HEAD        api/v1/products ....................................................................................... api.products.index › Api\V1\Admin\ProductApiController@index
-  POST            api/v1/products ....................................................................................... api.products.store › Api\V1\Admin\ProductApiController@store
-  POST            api/v1/products/media ....................................................................... api.products.storeMedia › Api\V1\Admin\ProductApiController@storeMedia
-  GET|HEAD        api/v1/products/{product} ............................................................................... api.products.show › Api\V1\Admin\ProductApiController@show
-  PUT|PATCH       api/v1/products/{product} ........................................................................... api.products.update › Api\V1\Admin\ProductApiController@update
-  DELETE          api/v1/products/{product} ......................................................................... api.products.destroy › Api\V1\Admin\ProductApiController@destroy
-  GET|HEAD        home ............................................................................................................................................................... 
-  GET|HEAD        login ................................................................................................................... login › Auth\LoginController@showLoginForm
-  POST            login ................................................................................................................................... Auth\LoginController@login
-  POST            logout ........................................................................................................................ logout › Auth\LoginController@logout
-  GET|HEAD        password/confirm ................................................................................. password.confirm › Auth\ConfirmPasswordController@showConfirmForm
-  POST            password/confirm ............................................................................................................ Auth\ConfirmPasswordController@confirm
-  POST            password/email ................................................................................... password.email › Auth\ForgotPasswordController@sendResetLinkEmail
-  GET|HEAD        password/reset ................................................................................ password.request › Auth\ForgotPasswordController@showLinkRequestForm
-  POST            password/reset ................................................................................................ password.update › Auth\ResetPasswordController@reset
-  GET|HEAD        password/reset/{token} ................................................................................. password.reset › Auth\ResetPasswordController@showResetForm
-  GET|HEAD        profile/password ........................................................................................ profile.password.edit › Auth\ChangePasswordController@edit
-  POST            profile/password .................................................................................... profile.password.update › Auth\ChangePasswordController@update
-  POST            profile/profile ....................................................................... profile.password.updateProfile › Auth\ChangePasswordController@updateProfile
-  POST            profile/profile/destroy .................................................................... profile.password.destroyProfile › Auth\ChangePasswordController@destroy
-  GET|HEAD        register ................................................................................................... register › Auth\RegisterController@showRegistrationForm
-  POST            register .......................................................................................................................... Auth\RegisterController@register
-  GET|HEAD        sanctum/csrf-cookie .................................................................................................... Laravel\Sanctum › CsrfCookieController@show
+  ANY             / .......................................................... Illuminate\Routing › RedirectController
+  GET|HEAD        _dusk/login/{userId}/{guard?} ..................... dusk.login › Laravel\Dusk › UserController@login
+  GET|HEAD        _dusk/logout/{guard?} ........................... dusk.logout › Laravel\Dusk › UserController@logout
+  GET|HEAD        _dusk/user/{guard?} ................................. dusk.user › Laravel\Dusk › UserController@user
+  POST            _ignition/execute-solution ignition.executeSolution › Spatie\LaravelIgnition › ExecuteSolutionContr…
+  GET|HEAD        _ignition/health-check ....... ignition.healthCheck › Spatie\LaravelIgnition › HealthCheckController
+  POST            _ignition/update-config .... ignition.updateConfig › Spatie\LaravelIgnition › UpdateConfigController
+  GET|HEAD        admin ...................................................... admin.home › Admin\HomeController@index
+  GET|HEAD        admin/audit-logs .......................... admin.audit-logs.index › Admin\AuditLogsController@index
+  GET|HEAD        admin/audit-logs/{audit_log} ................ admin.audit-logs.show › Admin\AuditLogsController@show
+  GET|HEAD        admin/permissions ...................... admin.permissions.index › Admin\PermissionsController@index
+  POST            admin/permissions ...................... admin.permissions.store › Admin\PermissionsController@store
+  GET|HEAD        admin/permissions/create ............. admin.permissions.create › Admin\PermissionsController@create
+  DELETE          admin/permissions/destroy .. admin.permissions.massDestroy › Admin\PermissionsController@massDestroy
+  GET|HEAD        admin/permissions/{permission} ........... admin.permissions.show › Admin\PermissionsController@show
+  PUT|PATCH       admin/permissions/{permission} ....... admin.permissions.update › Admin\PermissionsController@update
+  DELETE          admin/permissions/{permission} ..... admin.permissions.destroy › Admin\PermissionsController@destroy
+  GET|HEAD        admin/permissions/{permission}/edit ...... admin.permissions.edit › Admin\PermissionsController@edit
+  GET|HEAD        admin/product-categories .... admin.product-categories.index › Admin\ProductCategoryController@index
+  POST            admin/product-categories .... admin.product-categories.store › Admin\ProductCategoryController@store
+  POST            admin/product-categories/ckmedia admin.product-categories.storeCKEditorImages › Admin\ProductCatego…
+  GET|HEAD        admin/product-categories/create admin.product-categories.create › Admin\ProductCategoryController@c…
+  DELETE          admin/product-categories/destroy admin.product-categories.massDestroy › Admin\ProductCategoryContro…
+  POST            admin/product-categories/media admin.product-categories.storeMedia › Admin\ProductCategoryControlle…
+  GET|HEAD        admin/product-categories/{product_category} admin.product-categories.show › Admin\ProductCategoryCo…
+  PUT|PATCH       admin/product-categories/{product_category} admin.product-categories.update › Admin\ProductCategory…
+  DELETE          admin/product-categories/{product_category} admin.product-categories.destroy › Admin\ProductCategor…
+  GET|HEAD        admin/product-categories/{product_category}/edit admin.product-categories.edit › Admin\ProductCateg…
+  GET|HEAD        admin/product-details ............ admin.product-details.index › Admin\ProductDetailController@index
+  POST            admin/product-details ............ admin.product-details.store › Admin\ProductDetailController@store
+  GET|HEAD        admin/product-details/create ... admin.product-details.create › Admin\ProductDetailController@create
+  DELETE          admin/product-details/destroy admin.product-details.massDestroy › Admin\ProductDetailController@mas…
+  GET|HEAD        admin/product-details/{product_detail} admin.product-details.show › Admin\ProductDetailController@s…
+  PUT|PATCH       admin/product-details/{product_detail} admin.product-details.update › Admin\ProductDetailController…
+  DELETE          admin/product-details/{product_detail} admin.product-details.destroy › Admin\ProductDetailControlle…
+  GET|HEAD        admin/product-details/{product_detail}/edit admin.product-details.edit › Admin\ProductDetailControl…
+  GET|HEAD        admin/product-tags ..................... admin.product-tags.index › Admin\ProductTagController@index
+  POST            admin/product-tags ..................... admin.product-tags.store › Admin\ProductTagController@store
+  GET|HEAD        admin/product-tags/create ............ admin.product-tags.create › Admin\ProductTagController@create
+  DELETE          admin/product-tags/destroy . admin.product-tags.massDestroy › Admin\ProductTagController@massDestroy
+  GET|HEAD        admin/product-tags/{product_tag} ......... admin.product-tags.show › Admin\ProductTagController@show
+  PUT|PATCH       admin/product-tags/{product_tag} ..... admin.product-tags.update › Admin\ProductTagController@update
+  DELETE          admin/product-tags/{product_tag} ... admin.product-tags.destroy › Admin\ProductTagController@destroy
+  GET|HEAD        admin/product-tags/{product_tag}/edit .... admin.product-tags.edit › Admin\ProductTagController@edit
+  GET|HEAD        admin/products ................................ admin.products.index › Admin\ProductController@index
+  POST            admin/products ................................ admin.products.store › Admin\ProductController@store
+  POST            admin/products/ckmedia admin.products.storeCKEditorImages › Admin\ProductController@storeCKEditorIm…
+  GET|HEAD        admin/products/create ....................... admin.products.create › Admin\ProductController@create
+  DELETE          admin/products/destroy ............ admin.products.massDestroy › Admin\ProductController@massDestroy
+  POST            admin/products/media ................ admin.products.storeMedia › Admin\ProductController@storeMedia
+  GET|HEAD        admin/products/{product} ........................ admin.products.show › Admin\ProductController@show
+  PUT|PATCH       admin/products/{product} .................... admin.products.update › Admin\ProductController@update
+  DELETE          admin/products/{product} .................. admin.products.destroy › Admin\ProductController@destroy
+  GET|HEAD        admin/products/{product}/edit ................... admin.products.edit › Admin\ProductController@edit
+  GET|HEAD        admin/roles ........................................ admin.roles.index › Admin\RolesController@index
+  POST            admin/roles ........................................ admin.roles.store › Admin\RolesController@store
+  GET|HEAD        admin/roles/create ............................... admin.roles.create › Admin\RolesController@create
+  DELETE          admin/roles/destroy .................... admin.roles.massDestroy › Admin\RolesController@massDestroy
+  GET|HEAD        admin/roles/{role} ................................... admin.roles.show › Admin\RolesController@show
+  PUT|PATCH       admin/roles/{role} ............................... admin.roles.update › Admin\RolesController@update
+  DELETE          admin/roles/{role} ............................. admin.roles.destroy › Admin\RolesController@destroy
+  GET|HEAD        admin/roles/{role}/edit .............................. admin.roles.edit › Admin\RolesController@edit
+  GET|HEAD        admin/users ........................................ admin.users.index › Admin\UsersController@index
+  POST            admin/users ........................................ admin.users.store › Admin\UsersController@store
+  GET|HEAD        admin/users/create ............................... admin.users.create › Admin\UsersController@create
+  DELETE          admin/users/destroy .................... admin.users.massDestroy › Admin\UsersController@massDestroy
+  GET|HEAD        admin/users/{user} ................................... admin.users.show › Admin\UsersController@show
+  PUT|PATCH       admin/users/{user} ............................... admin.users.update › Admin\UsersController@update
+  DELETE          admin/users/{user} ............................. admin.users.destroy › Admin\UsersController@destroy
+  GET|HEAD        admin/users/{user}/edit .............................. admin.users.edit › Admin\UsersController@edit
+  GET|HEAD        api/v1/product-categories api.product-categories.index › Api\V1\Admin\ProductCategoryApiController@…
+  POST            api/v1/product-categories api.product-categories.store › Api\V1\Admin\ProductCategoryApiController@…
+  POST            api/v1/product-categories/media api.product-categories.storeMedia › Api\V1\Admin\ProductCategoryApi…
+  GET|HEAD        api/v1/product-categories/{product_category} api.product-categories.show › Api\V1\Admin\ProductCate…
+  PUT|PATCH       api/v1/product-categories/{product_category} api.product-categories.update › Api\V1\Admin\ProductCa…
+  DELETE          api/v1/product-categories/{product_category} api.product-categories.destroy › Api\V1\Admin\ProductC…
+  GET|HEAD        api/v1/product-details ... api.product-details.index › Api\V1\Admin\ProductDetailApiController@index
+  POST            api/v1/product-details ... api.product-details.store › Api\V1\Admin\ProductDetailApiController@store
+  GET|HEAD        api/v1/product-details/{product_detail} api.product-details.show › Api\V1\Admin\ProductDetailApiCon…
+  PUT|PATCH       api/v1/product-details/{product_detail} api.product-details.update › Api\V1\Admin\ProductDetailApiC…
+  DELETE          api/v1/product-details/{product_detail} api.product-details.destroy › Api\V1\Admin\ProductDetailApi…
+  GET|HEAD        api/v1/product-tags ............ api.product-tags.index › Api\V1\Admin\ProductTagApiController@index
+  POST            api/v1/product-tags ............ api.product-tags.store › Api\V1\Admin\ProductTagApiController@store
+  GET|HEAD        api/v1/product-tags/{product_tag} api.product-tags.show › Api\V1\Admin\ProductTagApiController@show
+  PUT|PATCH       api/v1/product-tags/{product_tag} api.product-tags.update › Api\V1\Admin\ProductTagApiController@up…
+  DELETE          api/v1/product-tags/{product_tag} api.product-tags.destroy › Api\V1\Admin\ProductTagApiController@d…
+  GET|HEAD        api/v1/products ....................... api.products.index › Api\V1\Admin\ProductApiController@index
+  POST            api/v1/products ....................... api.products.store › Api\V1\Admin\ProductApiController@store
+  POST            api/v1/products/media ....... api.products.storeMedia › Api\V1\Admin\ProductApiController@storeMedia
+  GET|HEAD        api/v1/products/{product} ............... api.products.show › Api\V1\Admin\ProductApiController@show
+  PUT|PATCH       api/v1/products/{product} ........... api.products.update › Api\V1\Admin\ProductApiController@update
+  DELETE          api/v1/products/{product} ......... api.products.destroy › Api\V1\Admin\ProductApiController@destroy
+  GET|HEAD        home ............................................................................................... 
+  GET|HEAD        login ................................................... login › Auth\LoginController@showLoginForm
+  POST            login ................................................................... Auth\LoginController@login
+  POST            logout ........................................................ logout › Auth\LoginController@logout
+  GET|HEAD        password/confirm ................. password.confirm › Auth\ConfirmPasswordController@showConfirmForm
+  POST            password/confirm ............................................ Auth\ConfirmPasswordController@confirm
+  POST            password/email ................... password.email › Auth\ForgotPasswordController@sendResetLinkEmail
+  GET|HEAD        password/reset ................ password.request › Auth\ForgotPasswordController@showLinkRequestForm
+  POST            password/reset ................................ password.update › Auth\ResetPasswordController@reset
+  GET|HEAD        password/reset/{token} ................. password.reset › Auth\ResetPasswordController@showResetForm
+  GET|HEAD        profile/password ........................ profile.password.edit › Auth\ChangePasswordController@edit
+  POST            profile/password .................... profile.password.update › Auth\ChangePasswordController@update
+  POST            profile/profile ....... profile.password.updateProfile › Auth\ChangePasswordController@updateProfile
+  POST            profile/profile/destroy .... profile.password.destroyProfile › Auth\ChangePasswordController@destroy
+  GET|HEAD        register ................................... register › Auth\RegisterController@showRegistrationForm
+  POST            register .......................................................... Auth\RegisterController@register
+  GET|HEAD        sanctum/csrf-cookie .................................... Laravel\Sanctum › CsrfCookieController@show
 
-                                                                                                                                                                  Showing [109] routes
+                                                                                                  Showing [109] routes
 
